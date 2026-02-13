@@ -24,7 +24,7 @@ Servern startar på [http://localhost:3000](http://localhost:3000).
 npm run build
 ```
 
-### 4. Kör produktionsbygget
+### 4. Kör applikation för produktion
 
 ```bash
 npm start
@@ -44,3 +44,7 @@ src/
 | `npm run dev`   | Startar servern med nodemon + ts-node          |
 | `npm run build` | Kompilerar TypeScript till JavaScript (dist/)   |
 | `npm start`     | Kör kompilerad kod från dist/                  |
+
+
+Istället för ```nodemon``` och ```ts-node`` kan man använda 
+```tsx```och ```--watch```. [Läs denna artikel](https://medium.com/modernnerd-code/tsx-vs-ts-node-and-nodemon-0ec60d21c5e1)
