@@ -1,5 +1,4 @@
-import express from "express";
-import { router as exampleRoutes } from "./routes/exampleRoutes";
+import express, { Request, Response } from "express";
 
 const app = express();
 const PORT = 3000;
@@ -8,7 +7,9 @@ const PORT = 3000;
 app.use(express.json());
 
 // Routes
-app.use("/", exampleRoutes);
+app.get("/", (req: Request, res: Response) => {
+  res.json({ message: "Hello from Express + TypeScript!" });
+});
 
 // Starta servern
 app.listen(PORT, () => {

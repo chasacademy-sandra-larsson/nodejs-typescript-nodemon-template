@@ -34,9 +34,7 @@ npm start
 
 ```
 src/
-  server.ts              ← Huvudfil: skapar Express-app och startar servern
-  routes/
-    exampleRoutes.ts     ← Exempelroute (GET /)
+  server.ts   ← Huvudfil: skapar Express-app och startar servern
 ```
 
 ## Scripts
