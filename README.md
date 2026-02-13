@@ -8,8 +8,6 @@ En minimal template för backend-utveckling med Node.js, Express och TypeScript.
 
 ```bash
 npm install
-npm install express
-npm install -D @types/express
 ```
 
 ### 2. Starta utvecklingsservern (med hot reload)
