@@ -46,5 +46,6 @@ src/
 | `npm start`     | Kör kompilerad kod från dist/                  |
 
 
-Istället för ```nodemon``` och ```ts-node`` kan man använda 
-```tsx```och ```--watch```. [Läs denna artikel](https://medium.com/modernnerd-code/tsx-vs-ts-node-and-nodemon-0ec60d21c5e1)
+Istället för ```nodemon``` och ```ts-node``` kan man använda 
+```tsx```och ```--watch```. 
+[Läs denna artikel](https://medium.com/modernnerd-code/tsx-vs-ts-node-and-nodemon-0ec60d21c5e1)
