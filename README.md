@@ -37,6 +37,24 @@ src/
   server.ts   ← Huvudfil: skapar Express-app och startar servern
 ```
 
+## Dependencies
+
+### Runtime
+
+| Paket     | Beskrivning          |
+| --------- | -------------------- |
+| `express` | Web-ramverk (v5)     |
+
+### Dev
+
+| Paket            | Beskrivning                              |
+| ---------------- | ---------------------------------------- |
+| `typescript`     | TypeScript-kompilator                    |
+| `ts-node`        | Kör TypeScript direkt i Node.js          |
+| `nodemon`        | Automatisk omstart vid filändringar      |
+| `@types/node`    | Typdefinitioner för Node.js              |
+| `@types/express` | Typdefinitioner för Express              |
+
 ## Scripts
 
 | Script          | Beskrivning                                    |
