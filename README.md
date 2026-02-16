@@ -41,11 +41,23 @@ src/
 
 ### Runtime
 
+| Paket | Beskrivning |
+|-------|-------------|
+| `express` | Webbramverk för Node.js - hanterar routes, requests och responses |
+
 ```bash
 npm install express
 ```
 
 ### Dev
+
+| Paket | Beskrivning |
+|-------|-------------|
+| `typescript` | TypeScript-kompilatorn - kompilerar `.ts`-filer till JavaScript |
+| `ts-node` | Kör TypeScript direkt i Node.js utan att behöva kompilera först |
+| `nodemon` | Övervakar filändringar och startar om servern automatiskt (hot reload) |
+| `@types/node` | TypeScript-typdefinitioner för Node.js inbyggda moduler (fs, path, http etc.) |
+| `@types/express` | TypeScript-typdefinitioner för Express (ger autocomplete och typkontroll) |
 
 ```bash
 npm install -D typescript ts-node nodemon @types/node @types/express
