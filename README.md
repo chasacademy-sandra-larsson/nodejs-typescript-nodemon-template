@@ -41,19 +41,15 @@ src/
 
 ### Runtime
 
-| Paket     | Beskrivning          |
-| --------- | -------------------- |
-| `express` | Web-ramverk (v5)     |
+```bash
+npm install express
+```
 
 ### Dev
 
-| Paket            | Beskrivning                              |
-| ---------------- | ---------------------------------------- |
-| `typescript`     | TypeScript-kompilator                    |
-| `ts-node`        | Kör TypeScript direkt i Node.js          |
-| `nodemon`        | Automatisk omstart vid filändringar      |
-| `@types/node`    | Typdefinitioner för Node.js              |
-| `@types/express` | Typdefinitioner för Express              |
+```bash
+npm install -D typescript ts-node nodemon @types/node @types/express
+```
 
 ## Scripts
 
