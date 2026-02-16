@@ -54,23 +54,30 @@ npm install express
 | Paket | Beskrivning |
 |-------|-------------|
 | `typescript` | TypeScript-kompilatorn - kompilerar `.ts`-filer till JavaScript |
-| `ts-node` | Kör TypeScript direkt i Node.js utan att behöva kompilera först |
-| `nodemon` | Övervakar filändringar och startar om servern automatiskt (hot reload) |
+| `tsx` | Kör TypeScript direkt i Node.js, med inbyggd watch-funktion (ersätter `ts-node` + `nodemon`) |
 | `@types/node` | TypeScript-typdefinitioner för Node.js inbyggda moduler (fs, path, http etc.) |
 | `@types/express` | TypeScript-typdefinitioner för Express (ger autocomplete och typkontroll) |
 
 ```bash
-npm install -D typescript ts-node nodemon @types/node @types/express
+npm install -D typescript tsx @types/node @types/express
 ```
+
+## TSConfig
+
+Projektet använder ESM (ECMAScript Modules) med följande nyckelinställningar i `tsconfig.json`:
+
+| Inställning | Värde | Beskrivning |
+|-------------|-------|-------------|
+| `target` | `ES2022` | Stöder moderna features som top-level await |
+| `module` | `NodeNext` | Aktiverar ESM-moduler för Node.js |
+| `moduleResolution` | `NodeNext` | Resolver imports enligt Node.js ESM-regler |
+
+`package.json` har `"type": "module"` vilket gör att alla `.js`-filer behandlas som ESM.
 
 ## Scripts
 
 | Script          | Beskrivning                                    |
 | --------------- | ---------------------------------------------- |
-| `npm run dev`   | Startar servern med nodemon + ts-node          |
+| `npm run dev`   | Startar servern med tsx watch (hot reload)      |
 | `npm run build` | Kompilerar TypeScript till JavaScript (dist/)   |
 | `npm start`     | Kör kompilerad kod från dist/                  |
-
-
-Istället för ```nodemon``` och ```ts-node``` kan man använda ```tsx```och ```--watch```. 
-[Läs denna artikel](https://medium.com/modernnerd-code/tsx-vs-ts-node-and-nodemon-0ec60d21c5e1)
